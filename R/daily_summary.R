@@ -35,7 +35,7 @@
 #' @export
 
 # Optimized daily_summary function with comments
-daily_summary <- function(df, test2) {
+daily_summary <- function(df) {
   # Step 1: Count the number of assessors per facility and date_of_assessment
   assessors <- df |>
     distinct(facility, date_of_assessment, submitted_by, .keep_all = TRUE) |>
